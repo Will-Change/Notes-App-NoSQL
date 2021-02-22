@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User List</title>
+    <link rel='stylesheet' href='/stylesheets/style1.css' />
+  </head>
+  <body>
+    <h1>User List</h1>
+
+
+      
+      <%
+        var list = '';
+        for (i = 0; i < notes.length; i++) {
+          list += '<div class="div5">' + notes[i].note + '</div>';
+        }
+      %>
+      <%- list %>
+  
+        
+
+    
+  </body>

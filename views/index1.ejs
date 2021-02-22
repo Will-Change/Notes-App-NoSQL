@@ -1,0 +1,43 @@
+<% include partials/header %>
+    <div class="div2"><button class="btn btn-light" onclick="typenote()">Create</button></div>
+
+    <div class="div3"></div>
+
+
+    <div class="div4">      
+      <form name="addnote" action="/addnote" method = "post" >
+        <textarea name="notetext" id="notetext" placeholder="note" maxlength="64"></textarea>
+
+        <button type="submit">
+
+        <svg id="bookmark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmarks" viewBox="0 0 16 16">
+  <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4zm2-1a1 1 0 0 0-1 1v10.566l3.723-2.482a.5.5 0 0 1 .554 0L11 14.566V4a1 1 0 0 0-1-1H4z"/>
+  <path d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1z"/>
+        </svg>
+</button>
+
+
+
+
+
+      </form>
+      <form name="goback" action="/goback" method = "post">
+        <button type="submit">
+                <svg id="bucket" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bucket" viewBox="0 0 16 16">
+  <path d="M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5zm1.005 0a4.5 4.5 0 0 1 8.945 0H3.527zm9.892 1l-1.286 8.574a.5.5 0 0 1-.494.426H4.36a.5.5 0 0 1-.494-.426L2.58 6h10.838z"/>
+        </svg>
+      </button>
+      </form>
+    </div>
+          <%
+        var list = '';
+        for (i = 0; i < notes.length; i++) {
+          list += '<div class="div5">' + notes[i].note + '</div>';
+        }
+      %>
+      <%- list %>
+  
+
+  <% include partials/footer %>
+  </body>
+</html>
