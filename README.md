@@ -10,7 +10,7 @@ Procfile isnt necessary as it was for hosting it on heroku :(
 after this just create a collection called notes in using mongoDB and have a field with the name note
 start up your mongo community server.
 
-npm start, open http://localhost:3000/index1(whatever port probably 3000)
+npm start, open http://localhost:3000/index1 (whatever port probably 3000)
 and BOOM you have a website running with databases and everything!
 
 tbh just create the framework and only download the useful files(app.js, package files, public files, routes files and views files)
