@@ -1,4 +1,4 @@
-# Notes-App-NoSQL
+# Notes-App-NoSQL(Peregrine)
 notes app using express as a framework for node, with a NoSQL database(MongoDB)
 i REALLY REALLY wanted to host this on heroku but as it turns out you cant do it for free with mlab anymore..
 after november 2020 you have to pay inorder to use the mongoDB database
